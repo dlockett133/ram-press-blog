@@ -2,11 +2,11 @@ const router = require("express").Router();
 
 router.get('/', async (req,res) => {
     console.log("Home page")
-    res.send("This is the home page")
+    res.render('homepage')
 });
 
 router.get('/dashboard/', async (req,res) => {
-    res.send("This is the dashboard");
+    res.render('dashboard');
 })
 
 
