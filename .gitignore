@@ -2,6 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,macos
 ###other###
 criteria/
+package-lock.json
 
 ### macOS ###
 # General
