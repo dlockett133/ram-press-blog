@@ -21,7 +21,8 @@ const blogPosts = [
 ]
 
 router.get('/', async (req,res) => {
-    res.render('homepage')
+    console.log('homepage')
+    res.render('homepage', {blogPosts})
 });
 
 router.get('/dashboard', async (req,res) => {
