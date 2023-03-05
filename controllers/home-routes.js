@@ -1,5 +1,25 @@
 const router = require("express").Router();
 
+const blogPosts = [
+    {
+        username: "",
+        blog_title: "",
+        description: ""
+    },
+
+    {
+        username: "",
+        blog_title: "",
+        description: ""
+    },
+
+    {
+        username: "",
+        blog_title: "",
+        description: ""
+    }
+]
+
 router.get('/', async (req,res) => {
     res.render('homepage')
 });
