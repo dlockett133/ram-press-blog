@@ -3,6 +3,7 @@
 ###other###
 criteria/
 package-lock.json
+.env
 
 ### macOS ###
 # General
