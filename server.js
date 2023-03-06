@@ -6,8 +6,10 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 const routes = require("./controllers");
 
+const { User, Posts, Comments } = require("./models");
+
 // const helpers = require("./utils/helpers");
-// const sequelize  = require("./config/connection.js");
+const sequelize  = require("./config/connection.js");
 
 
 const app = express();
@@ -26,4 +28,9 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use(routes);
 
-app.listen(PORT,() => console.log(`connected to server! ${PORT}`));
+sequelize.sync({force: false}).then(() =>{
+    app.listen(PORT,() => console.log(`connected to server! ${PORT}`));
+})
+.catch((err) => {
+    console.error('Unable to synchronize database:', err);
+  });
