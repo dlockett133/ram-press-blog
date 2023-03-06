@@ -4,6 +4,7 @@
 criteria/
 package-lock.json
 .env
+public/css/jass.css
 
 ### macOS ###
 # General
