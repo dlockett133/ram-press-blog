@@ -1,10 +1,12 @@
-# Employee Tracker
+# Ram Press Blog
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
 This application is current unfinished, but is a CMS-style blog site designed for developers to publish and comment on technical concepts, recent advancements, and new technologies. The site is built using Node.js, Express.js, Handlebars.js, Sequelize ORM, and express-session npm package for authentication.
+
+Deployed page:
 
 ## Table of Contents
 
